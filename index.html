@@ -1,0 +1,87 @@
+<html>
+	<head>
+		<title>
+			Random Ass Title
+		</title>
+		<link rel="stylesheet" type="text/css" href="style/mystyle.css">
+		<script>
+			function menu() {var x = document.getElementById("hidden_menu");
+								x.style.width = "15%";
+								x.style.transition = "width 0.5s";
+							var x = document.getElementById("wrapper");
+								x.style.width = "85%";
+								x.style.transition = "width 0.5s";
+							var x = document.getElementById("menu1");
+								x.style.height = "0px";
+								x.style.width = "0px";
+								x.style.visibility = "hidden";
+							var x = document.getElementById("menu2");
+								x.style.visibility = "visible";}
+		</script>
+		<script>
+			function menuReturn() {var x = document.getElementById("hidden_menu");
+									x.style.width = "0%";
+									x.style.transition = "width 0.5s";
+								var x = document.getElementById("wrapper");
+									x.style.width = "100%";
+									x.style.transition = "width 0.5s";
+								var x = document.getElementById("menu1");
+									x.style.height = "20px";
+									x.style.width = "40px";
+									x.style.visibility = "visible";
+								var x = document.getElementById("menu2");
+									x.style.visibility = "hidden";}
+		</script>
+		
+		<script>
+			var open = document.getElementById("box").width
+			
+			if (open==0){var x = document.getElementById("box");
+					x.style.width = "0%";
+					x.transition = "width 1s";
+			}else{
+			
+			}
+		</script>
+	</head>
+	
+	<body>
+	
+		<div id="hidden_menu">
+			<ul id="nav">
+				<h1 id="menu_title">
+					Menu
+				</h1>
+				<li>
+					<a href="#">
+						Home
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						About
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Contact
+					</a>
+				</li>
+				<li>
+					<a href="#">
+						Random
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<div id="wrapper">
+			<div id="header">
+				<input id="menu1" type="button" value="menu" onclick="menu()">
+				<input id="menu2" type="button" value="menu" onclick="menuReturn()">
+			</div>
+		</div>
+	
+	</body>
+
+</html>
